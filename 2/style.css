@@ -1,0 +1,11 @@
+span {
+	text-decoration: underline;
+	color: darkblue;
+ }
+img {
+	width: 300px;
+	border: 4px double fuchsia;
+}
+figcaption, ol {
+	font-size: 120%;
+}
