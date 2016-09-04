@@ -12,37 +12,49 @@ body {
 	margin: 0 auto;
 	border-style: solid;
 	border-width: 0 3px;
-	border-color: black;	
+	border-color: lightgray;	
 	background-color: silver; 	
 }
 .logo {
 	text-align: center;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
+	background-image: url(images/background.jpg);
 }
 .logo img {
 	width: 200px;
 	height: 200px;
+	opacity: 0.8;
 }
-figcaption {
-	font-family: fantasy;
+.logo div {
+	font-family: "franklin gothic medium";
 	font-size: 28px;
+	opacity: 0.8;
+	display: inline-block;
+	width: 50%;
 }
 .nav-header {
-	padding-left: 40px;
-	background-color: gold;
-	font-size: 20px;
+	width: 100%;
+	float: left;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc; 
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.nav-header li {
+	float: left;
+	list-style-type: none;
 }
 .nav-header a {
-	display: inline-block;
-	padding: 10px 15px 10px;
+	display: block;
+	padding: 8px 15px;
 	text-decoration: none;
-	color: black; 
+	font-weight: bold;
+	color :black;
+	border-left: 1px solid #ccc;
 }
-.nav-header a:hover {
-	background-color: white;
-}
-nav li {
-	display: inline-block;
+.nav-header li a:hover {
+	background-color: #fff;
 }
 .about {
 	padding-top: 20px;
@@ -50,6 +62,7 @@ nav li {
 	padding-right: 20px;
 	padding-bottom: 20px;	
 	background-color: lightslategray;
+	border-bottom: 1px solid #ccc;
 }
 .about span {
 	font-size: 24px;
@@ -61,19 +74,23 @@ nav li {
 .portfolio {
 	text-align: center;
 	font-size: 24px;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	border-bottom: 1px solid lightgray;
 }
 .portfolio-items {
 	position: relative;
 	width: 300px;
-	border: 2px solid green;
+	border: 2px solid black;
 	margin: 10px auto 0;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 1);
 	display: inline-block;
+	margin-right: 20px;
 }
 .portfolio-items img {
 	width: 100%;
 	vertical-align: middle;
+	border-color: lightgray;
 }
 .portfolio-items:hover .hover {
 	display: block;
@@ -104,13 +121,13 @@ nav li {
 }
 .contact {
 	padding: 10px 10px 10px;
-	border: 2px dotted dimgray;
-	text-align: center;
-	background-color: olive;
+	text-align: right;
+	background-color: #F5F5DC;
+	border-bottom: 1px solid lightgray;
 }
 .contact span {
 	font-family: "Courier New", Courier, monospace;
-	font-size: 1.5em;
+	font-size: 1.1em;
 }
 footer {
 	background-color: black;
@@ -123,6 +140,7 @@ footer {
 }
 .nav-footer li{
 	padding: 0 10px;
+	display: inline-block;
 }
 .nav-footer a {
 	text-decoration: none;
