@@ -1,0 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+@font-face {
+	font-family: 'Montserrat Light';
+	src: url(fonts/montserrat-light.woff);
+}
+@font-face {
+	font-family: 'Montserrat Regular';
+	src: url(fonts/montserrat-regular.woff);
+}
+body {
+	background-image: linear-gradient(to right, #fff, #e5e5e5);
+}
+table {
+	width: 1140px;
+	margin: 95px auto;
+	background-color: #fff;
+	box-shadow: 0 20px 20px rgba(0,0,0,.1);
+	border-collapse: collapse;
+}
+th {
+	text-transform: uppercase;
+	color: red;
+	font-size: 13px;
+	text-align: left;
+	font-family: 'montserrat-regular';
+	padding-bottom: 18px;
+	border-bottom: 1px solid #f1f1f1;
+}
+th,td {
+	padding-left: 25px;
+	padding-top: 20px;
+}
+td {
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+td, a {
+	font-family: 'montserrat-light';
+}
+td:first-child {
+	border-right:1px solid #f1f1f1;
+	width: 960px;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: red;
+	position: relative;
+	font-size: 13px;
+}
+a::before {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	bottom:-1px;
+	left: 0;
+	height: 2px;
+}
+a:hover::before {
+	background-color: red;
+}
+tr:hover:not(:first-child) {
+	background-color: #d4d4d4;
+	color: red;
+}
+tr:nth-child(2n+3) {
+	background-color: #fbfbfb;
+}
+tr:nth-child(3) td ,
+tr:nth-child(4) td ,
+tr:nth-child(5) td ,
+tr:nth-child(6) td , 
+tr:nth-child(7) td {
+	padding-top: 15px;
+	padding-bottom: 13px;
+}
+tr:last-child td {
+	padding-top: 11px;
+	padding-bottom: 22px;
+}

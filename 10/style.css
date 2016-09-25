@@ -1,0 +1,13 @@
+@import "normalize.css";
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+form {
+	margin: 10px auto;
+	width: 100%;
+}
+input,
+button {
+	display: block;
+}
